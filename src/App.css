@@ -1,11 +1,29 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+.fight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height:300px;
+  margin: 20px;
+
+}
+
+
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +53,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.parade {
+  display: flex;
+  justify-content: center;
 }
