@@ -1,10 +1,18 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.parade {
+  display: flex;
 }
 
 @media (prefers-reduced-motion: no-preference) {
