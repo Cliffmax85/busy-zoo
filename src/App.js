@@ -1,11 +1,13 @@
 import './App.css';
 import { useState } from 'react';
 import AnimalList from './AnimalList';
+import Sign from './Sign';
 
 function App() {
   const [animalArray, setAnimalArray] = useState(['snek', 'cow']);
   const [lionSize, setLionSize] = useState(10);
   const [unicornSize, setUnicornSize] = useState(10);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="App">
@@ -20,6 +22,12 @@ function App() {
           <button onClick={() => setLionSize(lionSize + 1)}>The lion feasts!</button>
           <button onClick={() => setUnicornSize(unicornSize - 1)}>The lion bites!</button>
         </div>
+      </div>
+      <div className='sign'>
+        <Sign isOpen={isOpen}/>
+        <button onClick={() => setIsOpen(true)}>OPEN</button>
+        <button onClick={() => setIsOpen(false)}>CLOSED</button>
+
       </div>
       <AnimalList animals = {animalArray}/>
       <div className='buttons'>
